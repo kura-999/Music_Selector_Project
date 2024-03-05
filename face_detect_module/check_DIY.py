@@ -419,7 +419,7 @@ def extract_emotion(input_file, lstm_features):
                     # Perform emotion recognition using the Keras model
 
                     #store model file path
-                    model_path = "face_detect_module/model_files/DIY_1st.h5"
+                    model_path = "face_detect_module/model_files/DIY_1sts.h5"
 
                     #Load trained weights into the model (DIY model)
                     DIY_model = keras.models.load_model(model_path, custom_objects={'BatchNormalization': tf.keras.layers.BatchNormalization, 'f1_score': f1_score})
